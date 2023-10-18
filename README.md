@@ -1,27 +1,80 @@
-# React + TypeScript + Vite
+# Finanças Mais - EM DESENVOLVIMENTO
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
 
-Currently, two official plugins are available:
+O projeto "Finanças Mais" é uma plataforma de gestão financeira avançada que permite o registro de entradas e despesas, filtragem por categorias e datas, além de adição de metas de curto, médio e longo prazo. Também oferece um dashboard informativo que resume a sua vida financeira.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Esta versão aprimorada da aplicação foi desenvolvida aplicando os princípios SOLID e seguindo a metodologia TDD (Desenvolvimento Orientado por Testes).
 
-## Expanding the ESLint configuration
+## Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- TypeScript
+- Vite
+- Styled-components
+- React Hook Form
+- Yup
+- React Query
+- Husky (Git Hooks)
+- ESLint (Linting)
+- Prettier (Formatação)
+- React.js
+- Jest (Testes)
+- Cypress (Testes de Ponta a Ponta)
 
-- Configure the top-level `parserOptions` property like this:
+## Funcionalidades
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- Registro de Entradas e Despesas
+- Filtragem por Categorias e Datas
+- Adição de Metas de Curto, Médio e Longo Prazo
+- Dashboard Informativo
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Requisitos
+
+- Node.js: Certifique-se de que o Node.js esteja instalado no seu ambiente.
+- NPM: Utilizamos o NPM como gerenciador de pacotes, mas você pode usar o Yarn se preferir.
+
+## Como Iniciar o Projeto
+
+1. **Clone o Repositório:**
+
+   ```bash
+   git clone https://github.com/seu-usuario/financas-mais.git
+   ```
+
+2. **Instale as Dependências:**
+
+   ```bash
+   cd financas-mais
+   npm install
+   ```
+
+3. **Inicie o Servidor de Desenvolvimento:**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Acesse o Aplicativo:**
+
+   Abra o navegador e acesse [http://localhost:3000](http://localhost:3000).
+
+## Comandos Úteis
+
+- `npm run dev`: Inicia o servidor de desenvolvimento.
+- `npm run build`: Compila o aplicativo para produção.
+- `npm start`: Inicia o aplicativo em modo de produção.
+- `npm run lint`: Executa o ESLint para verificar a qualidade do código.
+- `npm test`: Executa os testes com o Jest.
+- `npm run e2e`: Executa testes de ponta a ponta com o Cypress.
+
+## Contribuição
+
+Sinta-se à vontade para contribuir com melhorias para o projeto. Se você encontrar problemas ou desejar adicionar novos recursos, crie uma "issue" ou envie um "pull request."
+
+## Licença
+
+Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.
+
+---
+
+Feito com ❤️ por Inara Almeida.
