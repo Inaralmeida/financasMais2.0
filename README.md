@@ -38,13 +38,13 @@ Esta versão aprimorada da aplicação foi desenvolvida aplicando os princípios
 1. **Clone o Repositório:**
 
    ```bash
-   git clone https://github.com/seu-usuario/financas-mais.git
+   git clone https://github.com/seu-usuario/financasMais2.0.git
    ```
 
 2. **Instale as Dependências:**
 
    ```bash
-   cd financas-mais
+   cd financasMais2.0
    npm install
    ```
 
