@@ -6,9 +6,11 @@ type ButtonProps = {
 	children: React.ReactNode
 	disabled?: boolean
 	isLoading?: boolean
+	type?: 'button' | 'submit'
 } & React.HTMLAttributes<HTMLButtonElement>
 const Button = ({
 	children,
+	type,
 	messageLoading,
 	isLoading,
 	variant = 'primary',
@@ -16,7 +18,7 @@ const Button = ({
 	...rest
 }: ButtonProps) => {
 	return (
-		<StyleButton {...rest} disabled={disabled} className={variant}>
+		<StyleButton {...rest} disabled={disabled} className={variant} type={type}>
 			<>{isLoading ? messageLoading : children}</>
 		</StyleButton>
 	)
