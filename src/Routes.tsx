@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import Transactions from './pages/Transactions'
+import { GlobalStyle } from './style/GlobalStyle'
 
 const Routes = () => {
 	return (
@@ -15,6 +16,7 @@ const Routes = () => {
 				<Route path='/dashboard' element={<Dashboard />} />
 				<Route path='/transactions/:type' element={<Transactions />} />
 			</Switch>
+			<GlobalStyle />
 		</BrowserRouter>
 	)
 }
