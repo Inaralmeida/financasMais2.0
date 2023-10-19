@@ -9,7 +9,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "commitlint": "commitlint --edit",
-    "test": "jest"
+    "test": "jest --watch"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.2",
@@ -67,6 +67,7 @@
   "lint-staged": {
     "linters": {
       "*.{js,ts,tsx}": [
+        "test",
         "eslint --fix",
         "git add"
       ]
