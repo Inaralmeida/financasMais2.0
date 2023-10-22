@@ -35,7 +35,7 @@ export const StyleHeader = styled.header`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 12px 24px;
+	padding: 24px 12px;
 	margin: 0 auto;
 	> nav > ul {
 		display: flex;
