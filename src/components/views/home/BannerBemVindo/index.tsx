@@ -32,7 +32,7 @@ const BannerBemVindo = () => {
 
 export default BannerBemVindo
 
-const StyleBannerBemVindo = styled.section`
+export const StyleBannerBemVindo = styled.section`
 	width: 100%;
 	display: flex;
 	align-items: center;
