@@ -3,11 +3,12 @@ type BoxProps = {
 	children?: React.ReactNode
 	heigth?: string
 	width?: string
+	direction: 'row' | 'column'
 }
 
-const Box = ({ children, heigth, width }: BoxProps) => {
+const Box = ({ children, heigth, width, direction }: BoxProps) => {
 	return (
-		<StyleBox width={width} heigth={heigth}>
+		<StyleBox width={width} heigth={heigth} direction={direction}>
 			{children}
 		</StyleBox>
 	)
@@ -21,4 +22,7 @@ const StyleBox = styled.div<BoxProps>`
 	border-radius: 8px;
 	background-color: ${(props) => props.theme.white200};
 	padding: 24px;
+	display: flex;
+	gap: 12px;
+	flex-direction: ${(props) => props.direction};
 `
