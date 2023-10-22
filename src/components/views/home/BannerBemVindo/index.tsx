@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import images from '../../../assets/images/images'
+import images from '../../../../assets/images/images'
 
 const BannerBemVindo = () => {
 	return (

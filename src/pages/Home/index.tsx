@@ -1,5 +1,5 @@
-import BannerBemVindo from '../../components/views/BannerBemVindo'
-import Header from '../../components/views/Header'
+import BannerBemVindo from '../../components/views/home/BannerBemVindo'
+import Header from '../../components/views/home/Header'
 
 const Home = () => {
 	return (

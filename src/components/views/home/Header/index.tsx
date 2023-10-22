@@ -1,7 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
-import Button from '../../common/Button'
-import Logo from './../../common/Logo/index'
+import Button from '../../../common/Button'
+import Logo from '../../../common/Logo/index'
 
 const Header = () => {
 	const navigate = useNavigate()
