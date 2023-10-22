@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 type LogoProps = {
 	color?: 'blue' | 'white'
-	size?: string
+	size?: 'medium' | 'large' | 'small'
 }
 
 const Logo = ({ color = 'blue', size = 'medium' }: LogoProps) => {

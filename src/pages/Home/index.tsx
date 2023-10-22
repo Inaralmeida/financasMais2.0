@@ -3,6 +3,7 @@ import BannerDesafioFinanceiro from '../../components/views/home/BannerDesafioFi
 import BannerTransformacoes from '../../components/views/home/BannerTransformacoes'
 import BannerTransforme from '../../components/views/home/BannerTransforme'
 import BannerVantagens from '../../components/views/home/BannerVantagens'
+import Footer from '../../components/views/home/Footer'
 import Header from '../../components/views/home/Header'
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
 			<BannerTransforme />
 			<BannerTransformacoes />
 			<BannerVantagens />
+			<Footer />
 		</div>
 	)
 }
