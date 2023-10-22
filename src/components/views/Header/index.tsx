@@ -17,7 +17,7 @@ const Header = () => {
 						<Link to='/login'>Entrar</Link>
 					</li>
 					<li>
-						<Button onClick={() => navigate('/cadastro')} variant='primary'>
+						<Button onClick={() => navigate('/register')} variant='primary'>
 							Cadastre-se
 						</Button>
 					</li>
