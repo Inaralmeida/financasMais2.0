@@ -82,4 +82,16 @@ a{
   font-weight: 400;
   line-height: normal;
 }
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background-color: ${(props) => props.theme.white200};
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: ${(props) => props.theme.blue700};
+  border-radius: 8px;
+}
 `
