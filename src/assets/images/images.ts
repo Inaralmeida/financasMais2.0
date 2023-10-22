@@ -4,6 +4,7 @@ import banner3 from './home/LP-banner3.svg'
 import lpicon1 from './home/LP-icon1.svg'
 import lpicon2 from './home/LP-icon2.svg'
 import lpicon3 from './home/LP-icon3.svg'
+import bgbanner1 from './home/bg-banner1.svg'
 import lpprofile from './home/profile.svg'
 
 export default {
@@ -14,6 +15,7 @@ export default {
 		lpicon1,
 		lpicon2,
 		lpicon3,
-		lpprofile
+		lpprofile,
+		bgbanner1
 	}
 }
