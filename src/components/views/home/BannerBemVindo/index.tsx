@@ -54,13 +54,53 @@ export const StyleBannerBemVindo = styled.section`
 		color: ${(props) => props.theme.blue900};
 
 		> article {
-			width: 40%;
+			width: 50%;
 			max-width: 500px;
+			min-width: 300px;
 			display: flex;
 			flex-direction: column;
 			gap: 24px;
 			align-items: flex-start;
 			justify-content: center;
+			flex-shrink: 1;
+			flex-grow: 1;
+		}
+		picture,
+		picture > img {
+			flex-grow: 3;
+			flex-shrink: 5;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		picture {
+			width: 30%;
+			> img {
+				width: 100%;
+			}
+		}
+	}
+
+	@media screen and (max-width: 475px) {
+		padding: 24px 0px;
+		text-align: center;
+		.content {
+			flex-direction: column;
+			align-items: center;
+			gap: 24px;
+			> article,
+			> picture,
+			img {
+				width: 90%;
+			}
+
+			picture {
+				order: 1;
+			}
+
+			article {
+				order: 2;
+			}
 		}
 	}
 `

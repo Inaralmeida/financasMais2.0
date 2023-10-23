@@ -1,9 +1,12 @@
+import { useMediaQuery } from 'react-responsive'
 import styled from 'styled-components'
 import images from '../../../../assets/images/images'
 import Box from '../../../common/Box'
 import { StyleBannerBemVindo } from '../BannerBemVindo'
 
 const BannerTransformacoes = () => {
+	const isMobile = useMediaQuery({ maxWidth: 475 })
+
 	return (
 		<StyleBannerTransformacoes>
 			<div className='content'>
@@ -25,7 +28,10 @@ const BannerTransformacoes = () => {
 						suas finanças e conquistaram sonhos que pareciam distantes.
 					</p>
 
-					<Box heigth='fit-content' direction='row'>
+					<Box
+						heigth='fit-content'
+						direction={isMobile ? 'column-reverse' : 'row'}
+					>
 						<picture>
 							<img
 								className='picture-profile'
@@ -74,5 +80,36 @@ const StyleBannerTransformacoes = styled(StyleBannerBemVindo)`
 	.picture-profile {
 		width: 100px;
 		height: 100px;
+	}
+
+	@media screen and (max-width: 475px) {
+		padding: 24px 0px;
+		.content {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			gap: 24px;
+			> article,
+			> picture,
+			img {
+				width: 100%;
+			}
+
+			picture {
+				order: 1;
+			}
+
+			article {
+				order: 2;
+			}
+		}
+	}
+	@media screen and (max-width: 768px) {
+		picture {
+			width: 30%;
+			> img {
+				width: 100%;
+			}
+		}
 	}
 `

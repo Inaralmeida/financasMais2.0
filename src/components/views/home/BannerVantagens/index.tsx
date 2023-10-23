@@ -43,4 +43,9 @@ const StyleBannerVantagens = styled.section`
 			text-align: center;
 		}
 	}
+	@media screen and (max-width: 475px) {
+		flex-direction: column;
+		align-items: center;
+		gap: 24px;
+	}
 `
