@@ -26,7 +26,7 @@ const BannerDesafioFinanceiro = () => {
 					</p>
 
 					<p>
-						É por isso que desenvolvemos o Finanças+ - para ajudá-lo a superar
+						É por isso que desenvolvemos o Finanças+ para ajudá-lo a superar
 						esses desafios e alcançar a liberdade financeira que você tanto
 						deseja.
 					</p>
@@ -42,4 +42,50 @@ const StyleBannerDesafioFinanceiro = styled(StyleBannerBemVindo)`
 	background-image: none;
 	background-color: ${(props) => props.theme.white200};
 	padding: 24px 12px;
+
+	.content {
+		article {
+			min-width: 300px;
+			flex-shrink: 1;
+			flex-grow: 1;
+		}
+
+		picture,
+		picture > img {
+			flex-grow: 3;
+			flex-shrink: 5;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		picture {
+			width: 30%;
+			> img {
+				width: 100%;
+			}
+		}
+	}
+
+	@media screen and (max-width: 475px) {
+		padding: 24px 0px;
+		text-align: center;
+		.content {
+			flex-direction: column;
+			align-items: center;
+			gap: 24px;
+			> article,
+			> picture,
+			img {
+				width: 90%;
+			}
+
+			picture {
+				order: 1;
+			}
+
+			article {
+				order: 2;
+			}
+		}
+	}
 `

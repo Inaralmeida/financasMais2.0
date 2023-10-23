@@ -104,6 +104,13 @@ const StyleFooter = styled.footer`
 
 		@media screen and (max-width: 475px) {
 			flex-direction: column;
+			gap: 24px;
+
+			> ul.socials-network {
+				height: fit-content;
+				width: 100%;
+				justify-content: space-around;
+			}
 		}
 	}
 `

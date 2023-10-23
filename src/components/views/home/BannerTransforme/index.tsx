@@ -52,4 +52,17 @@ const StyleBannerTransforme = styled(StyleBannerBemVindo)`
 		align-items: center;
 		width: 48%;
 	}
+	@media screen and (max-width: 475px) {
+		.content {
+			flex-direction: column;
+			text-align: center;
+
+			> form {
+				order: 2;
+				flex-direction: column;
+				align-items: center;
+				width: 100%;
+			}
+		}
+	}
 `

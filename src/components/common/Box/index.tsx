@@ -3,7 +3,7 @@ type BoxProps = {
 	children?: React.ReactNode
 	heigth?: string
 	width?: string
-	direction: 'row' | 'column'
+	direction: 'row' | 'column' | 'column-reverse' | 'row-reverse'
 }
 
 const Box = ({ children, heigth, width, direction }: BoxProps) => {
