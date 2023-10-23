@@ -1,4 +1,4 @@
-import images from '../../../assets/images/images'
+import images from '../../../assets/images'
 type ButtonMenuResponsivoProps = {
 	isOpen: boolean
 	onClose: React.Dispatch<React.SetStateAction<boolean>>
