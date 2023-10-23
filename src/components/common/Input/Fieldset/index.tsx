@@ -1,3 +1,4 @@
+import React from 'react'
 import Label from '../Label'
 
 type FieldsetProps = {
@@ -8,7 +9,7 @@ type FieldsetProps = {
 
 const Fieldset = ({ children, name, id }: FieldsetProps) => {
 	return (
-		<div>
+		<div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
 			<Label text={name} id={id} />
 			{children}
 		</div>
