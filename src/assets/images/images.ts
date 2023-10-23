@@ -6,7 +6,9 @@ import lpicon2 from './home/LP-icon2.svg'
 import lpicon3 from './home/LP-icon3.svg'
 import bgbanner1 from './home/bg-banner1.svg'
 import lpprofile from './home/profile.svg'
-
+import IconClose from './icons/IconClose'
+import IconOpenMenu from './icons/IconOpen'
+import IconPlus from './icons/IconPlus'
 export default {
 	home: {
 		banner1,
@@ -17,5 +19,10 @@ export default {
 		lpicon3,
 		lpprofile,
 		bgbanner1
+	},
+	icons: {
+		IconOpenMenu,
+		IconClose,
+		IconPlus
 	}
 }
