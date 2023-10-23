@@ -1,6 +1,6 @@
 import { useMediaQuery } from 'react-responsive'
 import styled from 'styled-components'
-import images from '../../../../assets/images/images'
+import images from '../../../../assets/images'
 import Box from '../../../common/Box'
 import { StyleBannerBemVindo } from '../BannerBemVindo'
 

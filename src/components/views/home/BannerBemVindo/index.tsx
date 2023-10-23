@@ -1,5 +1,6 @@
+import React from 'react'
 import styled from 'styled-components'
-import images from '../../../../assets/images/images'
+import images from '../../../../assets/images'
 
 const BannerBemVindo = () => {
 	return (
@@ -54,7 +55,7 @@ export const StyleBannerBemVindo = styled.section`
 		color: ${(props) => props.theme.blue900};
 
 		> article {
-			width: 50%;
+			width: 40%;
 			max-width: 500px;
 			min-width: 300px;
 			display: flex;
@@ -62,13 +63,6 @@ export const StyleBannerBemVindo = styled.section`
 			gap: 24px;
 			align-items: flex-start;
 			justify-content: center;
-			flex-shrink: 1;
-			flex-grow: 1;
-		}
-		picture,
-		picture > img {
-			flex-grow: 3;
-			flex-shrink: 5;
 		}
 	}
 

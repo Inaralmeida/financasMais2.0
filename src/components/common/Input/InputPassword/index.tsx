@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { FieldError } from 'react-hook-form'
 import { BsFillEyeFill, BsFillEyeSlashFill } from 'react-icons/bs'
 import BaseInput from '../BaseInput'
@@ -24,9 +24,13 @@ const InputPassword = ({
 	const [viewPassword, setViewPassword] = useState(false)
 	const type = viewPassword ? 'text' : 'password'
 	const icon = viewPassword ? (
-		<BsFillEyeSlashFill onClick={handleViewPassword} />
+		<BsFillEyeSlashFill
+			onClick={handleViewPassword}
+			cursor={'pointer'}
+			color='inherit'
+		/>
 	) : (
-		<BsFillEyeFill onClick={handleViewPassword} />
+		<BsFillEyeFill onClick={handleViewPassword} cursor={'pointer'} />
 	)
 	function handleViewPassword() {
 		setViewPassword(!viewPassword)
