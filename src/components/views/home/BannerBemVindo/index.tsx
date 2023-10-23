@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import images from '../../../../assets/images/images'
+import images from '../../../../assets/images'
 
 const BannerBemVindo = () => {
 	return (
