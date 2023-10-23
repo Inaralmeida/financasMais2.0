@@ -1,3 +1,4 @@
+import React from 'react'
 import { RiCloseLine } from 'react-icons/ri'
 import styled from 'styled-components'
 import { theme } from '../../../../style/theme'
@@ -14,7 +15,7 @@ const Modal = ({ title, open, onClose, children }: ModalProps) => {
 	}
 
 	return (
-		<>
+		<React.Fragment>
 			{open && (
 				<StylesModal id='modal' onClick={handleClose}>
 					<StylesContentModal>
@@ -31,7 +32,7 @@ const Modal = ({ title, open, onClose, children }: ModalProps) => {
 					</StylesContentModal>
 				</StylesModal>
 			)}
-		</>
+		</React.Fragment>
 	)
 }
 
@@ -60,7 +61,7 @@ const StylesContentModal = styled.div`
 	gap: 18px;
 	flex-shrink: 0;
 	border-radius: 16px;
-	background: ${(p) => p.theme.white200};
+	background: ${(p) => p.theme.white50};
 	box-shadow:
 		4px 7px 21px 0px #26323880,
 		-4px -7px 21px 0px #26323880;
