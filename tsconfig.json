@@ -22,6 +22,5 @@
 	},
 	"include": ["src"],
 	"references": [{ "path": "./tsconfig.node.json" }],
-	"types": ["node", "jest", "@testing-library/jest-dom"],
-	"files": ["src/styles/styles.d.ts"]
+	"types": ["node", "jest", "@testing-library/jest-dom"]
 }
