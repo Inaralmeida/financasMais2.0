@@ -2,6 +2,7 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import { MdEmail } from 'react-icons/md'
+import { Link } from 'react-router-dom'
 import images from '../../assets/images'
 import Button from './../../components/common/Button/index'
 import Fieldset from './../../components/common/Input/Fieldset/index'
@@ -48,6 +49,16 @@ const Login = () => {
 							error={errors.senha}
 						/>
 					</Fieldset>
+
+					<p style={{ fontSize: '14px' }}>
+						Ainda não tem uma conta?{' '}
+						<Link
+							style={{ fontWeight: 'bold', fontSize: '14px' }}
+							to={'/register'}
+						>
+							Cadastre-se
+						</Link>
+					</p>
 					<Button variant='primary' type='submit' width='100%'>
 						Entrar
 					</Button>
