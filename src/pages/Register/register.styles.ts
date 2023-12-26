@@ -7,15 +7,17 @@ export const StyleRegister = styled.main`
 	justify-content: space-between;
 	background-color: ${(props) => props.theme.blue700};
 	> section {
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		gap: 48px;
 		padding: 48px 24px;
-
+		flex-shrink: 3;
 		> picture {
-			width: 60%;
+			width: 90%;
+			max-width: 550px;
 
 			> img {
 				width: 100%;
@@ -24,9 +26,10 @@ export const StyleRegister = styled.main`
 	}
 
 	> form {
+		flex-shrink: 1;
 		width: 50%;
-		max-width: 500px;
-		min-width: 300px;
+		max-width: 700px;
+		min-width: 450px;
 		height: 100%;
 		justify-content: space-around;
 		border-radius: 16px 0 0 16px;
@@ -45,8 +48,12 @@ export const StyleRegister = styled.main`
 			border: none;
 		}
 
-		ul {
+		.box-password-requirements {
 			width: 100%;
+			background-color: ${(props) => props.theme.blue100};
+			padding: 12px;
+			border-radius: 8px;
+
 			font-size: 12px;
 			> li {
 				margin-left: 15px;
