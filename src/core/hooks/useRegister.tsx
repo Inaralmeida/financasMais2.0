@@ -12,12 +12,12 @@ const useRegister = () => {
 			.min(8, 'A senha deve ter pelo menos 8 caracteres')
 			.matches(
 				/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/,
-				'A senha deve conter pelo menos um caractere maiúsculo, um caractere minúsculo, um número e um caractere especial.'
+				'Formato de senha inválido'
 			),
-		confirmPassword: Yup.string().oneOf(
-			[Yup.ref('password'), undefined],
-			'As senhas não coincidem'
-		)
+		confirmPassword: Yup.string()
+			.required('A confirmação senha é obrigatória')
+			.min(8, 'A senha deve ter pelo menos 8 caracteres')
+			.oneOf([Yup.ref('password'), ''], 'As senhas não coincidem')
 	})
 
 	const defaultValue = {
