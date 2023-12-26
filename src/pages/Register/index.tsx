@@ -39,36 +39,26 @@ const Register = () => {
 			<form onSubmit={handleSubmit(handleRegister)}>
 				{isMobile && <Logo size={'medium'} color='blue' />}
 				<h2>Cadastro</h2>
-				<fieldset>
-					<Fieldset
+				<Fieldset id='name' name='Nome' width='100%'>
+					<BasicInput
+						register={register}
 						id='name'
-						name='Nome'
-						width={isTablet || isMobile ? '100%' : '49%'}
-					>
-						<BasicInput
-							register={register}
-							id='name'
-							name='name'
-							placeholder='Ex: Maria'
-							width='auto'
-							error={errors.name}
-						/>
-					</Fieldset>
-					<Fieldset
+						name='name'
+						placeholder='Ex: Maria'
+						width='auto'
+						error={errors.name}
+					/>
+				</Fieldset>
+				<Fieldset id='lastName' name='Sobrenome' width='100%'>
+					<BasicInput
+						register={register}
 						id='lastName'
-						name='Sobrenome'
-						width={isTablet || isMobile ? '100%' : '48%'}
-					>
-						<BasicInput
-							register={register}
-							id='lastName'
-							name='lastName'
-							placeholder='Ex: Silva'
-							width='auto'
-							error={errors.lastName}
-						/>
-					</Fieldset>
-				</fieldset>
+						name='lastName'
+						placeholder='Ex: Silva'
+						width='auto'
+						error={errors.lastName}
+					/>
+				</Fieldset>
 				<Fieldset id='email' name='Email' width='100%'>
 					<BasicInput
 						register={register}
@@ -99,13 +89,13 @@ const Register = () => {
 						error={errors.confirmPassword}
 					/>
 				</Fieldset>
-				<ul>
-					A senha precisa ter No minimo
+				<ul className='box-password-requirements'>
+					A senha precisa ter no mínimo
 					<li>8 caracteres</li>
-					<li>um caractere maiusculo</li>
-					<li>Um caractere minusculo</li>
-					<li>Um caractere um numero</li>
-					<li>Um caractere especial</li>
+					<li>Caractere maiúsculo</li>
+					<li>Caractere minúsculo</li>
+					<li>Caractere um número</li>
+					<li>Caractere especial</li>
 				</ul>
 				<p style={{ fontSize: '14px' }}>
 					Já tem uma conta?{' '}
@@ -113,7 +103,7 @@ const Register = () => {
 						Faça login
 					</Link>
 				</p>
-				<Button type='submit' width='100%'>
+				<Button type='submit' width='100%' disabled={true}>
 					Cadastrar
 				</Button>
 			</form>
