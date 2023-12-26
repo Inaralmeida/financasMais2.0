@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 
 type ButtonProps = {
@@ -46,6 +47,12 @@ const StyleButton = styled.button<ButtonProps>`
 	font-weight: 700;
 	line-height: normal;
 	transition: background 0.3s;
+
+	&:disabled {
+		opacity: 0.9;
+		cursor: not-allowed;
+		pointer-events: none;
+	}
 
 	&.primary {
 		background-color: ${(props) => props.theme.blue700};
